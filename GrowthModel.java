@@ -9,4 +9,9 @@ public class GrowthModel {
         rateOfGrowth = Math.log(finialPopulation / initialPopulation) / years;
 
     }
+
+
+    public double getRateOfGrowth(){
+        return rateOfGrowth;
+    }
 }
