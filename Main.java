@@ -20,8 +20,22 @@ public class Main {
 
             GrowthModel model = new GrowthModel(initialPopulation, finialPopulation, years);
 
-            //test
-            System.out.println(model.getRateOfGrowth());
+            System.out.println("Would you like to:\r\n" +
+                    "a.) Know what the population will be after a number of years.\r\n" +
+                    "b.) Know the number of years it will take for the population to reach a certain level.");
+
+            keyboard.nextLine();
+            char option = keyboard.nextLine().toLowerCase().charAt(0);
+
+            if (option == 'a') {
+
+                System.out.println("How many years into the future would you like to know the population size?");
+                double yearsInTheFuture = keyboard.nextDouble();
+
+                double futurePopulation = model.findFuturePopulation(yearsInTheFuture);
+
+                System.out.printf("The population is estimated to be %.2f in %.1f years.\n", futurePopulation, yearsInTheFuture);
+            }
             
         }
 
