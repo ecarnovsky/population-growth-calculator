@@ -18,6 +18,11 @@ public class GrowthModel {
     }
 
 
+    public double findYearsIntoTheFuture(double futurePopulation){
+        return (Math.log(futurePopulation / initialPopulation) / rateOfGrowth) - currentNumberOfYears;
+    }
+
+
     public double getRateOfGrowth(){
         return rateOfGrowth;
     }

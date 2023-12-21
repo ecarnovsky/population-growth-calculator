@@ -36,6 +36,16 @@ public class Main {
 
                 System.out.printf("The population is estimated to be %.2f in %.1f years.\n", futurePopulation, yearsInTheFuture);
             }
+            else if (option == 'b') {
+
+                System.out.println("What size population would you like to know about?");
+                double futurePopulation = keyboard.nextDouble();
+
+                double yearsIntoTheFuture = model.findYearsIntoTheFuture(futurePopulation);
+
+                System.out.printf("It will take %.1f years for the population to reach %.2f.\n", yearsIntoTheFuture, futurePopulation);
+                
+            }
             
         }
 
