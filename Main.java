@@ -13,12 +13,12 @@ public class Main {
             double initialPopulation = keyboard.nextDouble();
 
             System.out.println("What is the current population size?");
-            double finialPopulation = keyboard.nextDouble();
+            double finalPopulation = keyboard.nextDouble();
 
             System.out.println("How many years have passed?");
             double years = keyboard.nextDouble();
 
-            GrowthModel model = new GrowthModel(initialPopulation, finialPopulation, years);
+            GrowthModel model = new GrowthModel(initialPopulation, finalPopulation, years);
 
             System.out.println("Would you like to:\r\n" +
                     "a.) Know what the population will be after a number of years.\r\n" +

@@ -3,13 +3,13 @@ public class GrowthModel {
     private double rateOfGrowth;
     private double currentNumberOfYears;
 
-    public GrowthModel (double initialPopulation, double finialPopulation, double years){
+    public GrowthModel (double initialPopulation, double finalPopulation, double years){
 
         this.initialPopulation = initialPopulation;
 
         currentNumberOfYears = years;
 
-        rateOfGrowth = Math.log(finialPopulation / initialPopulation) / years;
+        rateOfGrowth = Math.log(finalPopulation / initialPopulation) / years;
 
     }
 
