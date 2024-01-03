@@ -46,6 +46,15 @@ public class Main {
                 System.out.printf("It will take %.1f years for the population to reach %.2f.\n", yearsIntoTheFuture, futurePopulation);
                 
             }
+
+            System.out.println("Would you like to continue? (y/n)");
+
+            keyboard.nextLine();
+            String userInput = keyboard.nextLine();
+
+            if(userInput.toLowerCase().equals("n") || userInput.toLowerCase().equals("no")){
+                break;
+            }
             
         }
 
